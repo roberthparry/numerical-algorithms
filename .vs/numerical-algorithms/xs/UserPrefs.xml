@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{89C711E4-9746-4C01-B85D-7D73B81B97E8}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.numerical-algorithms PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/AlgorithmsTests/IntegerMathTests.cs">
+    <Files>
+      <File FileName="src/Algorithms/IntegerMath.cs" Line="25" Column="22" />
+      <File FileName="src/AlgorithmsTests/IntegerMathTests.cs" Line="2" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
