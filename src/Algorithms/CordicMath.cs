@@ -2,6 +2,9 @@
 
 namespace Algorithms
 {
+    /// <summary>
+    ///     Cordic math.
+    /// </summary>
     public static class CordicMath
     {
         private static readonly double[] _a = new double[] {
