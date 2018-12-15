@@ -15,7 +15,7 @@ namespace AlgorithmsTests
         [TestCase(2.0e-6)]
         public void Ln_Test(double x)
         {
-            Assert.That(CordicMath.Ln(x, 30), Is.EqualTo(Math.Log(x)).Within(1.0e-15));
+            Assert.That(CordicMath.Ln(x, 100), Is.EqualTo(Math.Log(x)).Within(1.0e-15));
         }
 
         [Test]

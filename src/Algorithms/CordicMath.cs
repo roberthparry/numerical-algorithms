@@ -12,7 +12,7 @@ namespace Algorithms
             1.0000004768372719, 1.0000002384186075, 1.0000001192092967, 1.0000000596046466, 1.0000000298023228
         };
 
-        public static double Ln(double x, uint steps = 30)
+        public static double Ln(double x, uint steps = 25)
         {
             if (x <= 0.0) throw new ArgumentException();
 
@@ -23,21 +23,33 @@ namespace Algorithms
             while (Math.E <= x) { k++; x /= Math.E; }
             while (x < 1.0) { k--; x *= Math.E; }
 
+            //
+            // Determine the weights.
+            //
             var w = new double[steps];
+            double ai = 0.0;
 
-            for (int i = 0;  i < steps; i++)
+            for (int i = 0;  i < steps;  i++)
             {
-                double ai = 0.0;
-                ai = (i < _a.Length) ? _a[i] : 1.0 + (ai - 1.0) / 2.0;
+                w[i] = 0.0;
+
+                ai = (i < _a.Length) ? _a[i] : (1.0 + (ai - 1.0) / 2.0);
 
                 if (ai < x) { w[i] = 1.0; x /= ai; }
             }
 
             x -= 1.0;
-            x *= (1.0 - (x / 2.0) * (1.0 + (x / 3.0) * (1.0 - x / 4.0)));
+            x = x * (1.0 - (x / 2.0) * (1.0 + (x / 3.0) * (1.0 - x / 4.0)));
 
+            //
+            // Assemble.
+            //
             double poweroftwo = 0.5;
-            for (int i = 0; i < steps; i++) { x += w[i] * poweroftwo; poweroftwo /= 2.0; }
+            for (int i = 0; i < steps; i++)
+            {
+                x += w[i] * poweroftwo;
+                poweroftwo /= 2.0;
+            }
 
             return k + x;
         }
