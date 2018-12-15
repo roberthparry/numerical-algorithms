@@ -18,7 +18,7 @@ namespace AlgorithmsTests
         [TestCase(2.0e-6)]
         public void Ln_Test(double x)
         {
-            Assert.That(CordicMath.Ln(x, _steps)/Math.Log(x), Is.EqualTo(1.0).Within(_tolerance));
+            Assert.That(CordicMath.Ln(x, _steps) / Math.Log(x), Is.EqualTo(1.0).Within(_tolerance));
         }
 
         [Test]
@@ -35,7 +35,7 @@ namespace AlgorithmsTests
         [TestCase(-2.0)]
         public void Exp_Test(double x)
         {
-            Assert.That(CordicMath.Exp(x, _steps) /Math.Exp(x), Is.EqualTo(1.0).Within(_tolerance));
+            Assert.That(CordicMath.Exp(x, _steps) / Math.Exp(x), Is.EqualTo(1.0).Within(_tolerance));
         }
     }
 }
