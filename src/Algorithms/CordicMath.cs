@@ -107,9 +107,10 @@ namespace Algorithms
                 }
                 poweroftwo /= 2.0;
             }
-            /*
-              Calculate products.
-            */
+
+            //
+            // Calculate products.
+            //
             double ai = 0.0;
             double fx = 1.0;
 
