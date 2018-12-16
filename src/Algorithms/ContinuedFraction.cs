@@ -2,6 +2,9 @@
 
 namespace Algorithms
 {
+    /// <summary>
+    ///     Continued fraction evaluation.
+    /// </summary>
     public static class ContinuedFraction
     {
         /// <summary>
