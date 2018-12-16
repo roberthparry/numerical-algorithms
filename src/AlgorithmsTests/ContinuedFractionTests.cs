@@ -30,8 +30,8 @@ namespace AlgorithmsTests
         }
 
         [TestCase(new double[] { }, new double[] { 1 }, 1.0)]
-        [TestCase(new double[] { 1, 2, 3 }, new double[] { 1, 2, 3, 4 }, 1.394736842105263157)]
-        [TestCase(new double[] {1,1,1,1,1,1,1,1,1,1,1,1 }, new double[] {1,1,1,1,1,1,1,1,1,1,1,1,1}, 1.6180257510729614)]
+        [TestCase(new double[] { 1, 2, 3 }, new double[] { 1, 2, 3, 4 }, 53.0/38.0)]
+        [TestCase(new double[] {1,1,1,1,1,1,1,1,1,1,1,1,1 }, new double[] {1,1,1,1,1,1,1,1,1,1,1,1,1,1}, 610.0/377.0)]
         public void Generalized_Test(double[] a, double[] b, double expected)
         {
             Assert.That(ContinuedFraction.Generalized(a, b), Is.EqualTo(expected).Within(1.0e-14));
