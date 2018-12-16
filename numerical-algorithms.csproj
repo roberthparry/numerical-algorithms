@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="src\Algorithms\CordicMath.cs" />
     <Compile Include="src\AlgorithmsTests\CordicMathTests.cs" />
+    <Compile Include="src\Algorithms\ContinuedFraction.cs" />
+    <Compile Include="src\AlgorithmsTests\ContinuedFractionTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
