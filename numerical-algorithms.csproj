@@ -51,6 +51,8 @@
     <Compile Include="src\AlgorithmsTests\CordicMathTests.cs" />
     <Compile Include="src\Algorithms\ContinuedFraction.cs" />
     <Compile Include="src\AlgorithmsTests\ContinuedFractionTests.cs" />
+    <Compile Include="src\Algorithms\PolyApprox.cs" />
+    <Compile Include="src\AlgorithmsTests\PolyApproxTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
